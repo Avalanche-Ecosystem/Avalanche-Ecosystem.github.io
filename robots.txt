@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://avalanche-ecosystem.github.io/sitemap.xml
