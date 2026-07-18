@@ -1,0 +1,74 @@
+# Avalanche Ecosystem
+> Avalanche Ecosystem is an independent, non-custodial dashboard for understanding Avalanche networks, assets, applications, and infrastructure.
+
+## What is Avalanche Ecosystem
+The Avalanche ecosystem comprises the Primary Network, sovereign Avalanche L1s, AVAX, wallets, bridges, explorers, and applications spanning DeFi, gaming, payments, NFTs, and institutional use cases. This dashboard organizes public information without operating Avalanche or taking custody of assets. Avalanche differs from single-chain platforms by supporting independent L1 networks with separate validators, execution rules, and token economics. Unlike a wallet, exchange, or bridge, an informational dashboard does not execute or guarantee transactions.
+
+## How it works
+1. The dashboard presents public network, project, asset, and reference data without requiring custody of funds.
+2. Users browse or compare ecosystem entries and verify networks, contracts, and activity through primary sources and explorers.
+3. Any action occurs through a linked application and the user’s self-custody wallet, which displays the transaction before signing.
+4. An RPC broadcasts signed transactions; the selected chain’s validators execute them and reach Snowman consensus.
+5. Cross-chain operations additionally depend on a bridge or messaging protocol, relayers, and finalization on the destination chain.
+
+## Key facts
+- Avalanche Mainnet consists of the Primary Network and deployed Avalanche L1s.
+- The Primary Network contains the C-Chain, P-Chain, and X-Chain.
+- C-Chain is EVM-compatible; mainnet chain ID is `43114` and Fuji testnet is `43113`.
+- C-Chain supports Solidity contracts and Ethereum standards such as ERC-20, ERC-721, and ERC-1155.
+- P-Chain coordinates Primary Network staking, validators, and Avalanche L1 records.
+- X-Chain manages Avalanche Native Tokens using the Avalanche Virtual Machine.
+- AVAX pays Primary Network transaction fees and secures it through proof-of-stake; transaction fees are burned.
+- Snowman uses repeated validator subsampling and provides probabilistic, normally sub-second finality.
+- Avalanche L1s may define their own validator membership, virtual machine, gas token, and economic rules.
+- Avalanche Interchain Messaging uses validator signatures and relayers for asynchronous communication between L1s.
+
+## Common questions
+### Is this dashboard official?
+No. It is an independent information service; verify protocol details through Avalanche documentation and explorers.
+
+### Does it hold my funds or private keys?
+No. Reading the dashboard requires no transfer of custody. Never enter a seed phrase or private key into a dashboard.
+
+### What fees apply?
+Viewing information creates no blockchain transaction. Wallet actions may incur gas, application, swap, or bridge fees shown by the relevant provider.
+
+### How long do transactions take?
+C-Chain normally reaches sub-second probabilistic finality. Swaps and bridges can take longer because they may require approvals, relayers, multiple chains, or provider processing.
+
+### Which assets and chains are supported?
+The ecosystem includes AVAX, C-Chain tokens, Avalanche Native Tokens, and assets issued on individual L1s. Dashboard coverage does not imply that every linked wallet or application supports them.
+
+### How do I start safely?
+Start without connecting a wallet. Before acting, confirm chain ID `43114`, verify token and application addresses, keep AVAX for gas, and review every approval.
+
+### What are the main risks?
+Risks include stale data, counterfeit tokens, malicious approvals, vulnerable smart contracts, bridge or relayer failures, phishing, liquidity constraints, and market volatility.
+
+## App
+- Dashboard: https://avalanche-ecosystem.github.io/
+- App: https://avalanche-ecosystem.github.io/dashboard/
+
+## Official resources
+Avalanche: https://www.avax.network/
+Builder documentation: https://build.avax.network/docs
+Avalanche L1 documentation: https://build.avax.network/docs/avalanche-l1s
+AVAX token documentation: https://build.avax.network/docs/primary-network/avax-token
+Consensus documentation: https://build.avax.network/docs/nodes/architecture/consensus
+Core wallet and portal: https://core.app/
+Official ecosystem directory: https://core.app/discover/
+Avalanche Explorer: https://explorer.avax.network/
+Network status: https://status.avax.network/
+AvalancheGo source code: https://github.com/ava-labs/avalanchego
+Ava Labs GitHub: https://github.com/ava-labs
+Official X: https://x.com/avax
+
+## Data & references
+Snowtrace C-Chain explorer: https://snowtrace.io/
+DeFiLlama Avalanche data: https://defillama.com/chain/avalanche
+CoinGecko Avalanche: https://www.coingecko.com/en/coins/avalanche
+CoinGecko Avalanche ecosystem: https://www.coingecko.com/en/categories/avalanche-ecosystem
+ChainList C-Chain configuration: https://chainlist.org/chain/43114
+ERC-20 standard: https://eips.ethereum.org/EIPS/eip-20
+EIP-155 chain-ID standard: https://eips.ethereum.org/EIPS/eip-155
+Wikipedia: https://en.wikipedia.org/wiki/Avalanche_%28blockchain_platform%29
