@@ -1,300 +1,1310 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Avalanche Ecosystem — Navigate Avalanche’s connected on-chain economy</title>
-  <meta name="description" content="The Avalanche ecosystem comprises the Primary Network, sovereign Avalanche L1s, applications, assets, infrastructure, validators, and the AVAX token.">
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-  <meta name="theme-color" content="#eef0f3">
-  <link rel="canonical" href="https://avalanche-ecosystem.github.io/">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="prefetch" href="dashboard/index.html">
-  <link rel="preconnect" href="https://defillama.com/" crossorigin>
-  <link rel="preconnect" href="https://coins.llama.fi" crossorigin>
-  <meta property="og:type" content="website"><meta property="og:url" content="https://avalanche-ecosystem.github.io/">
-  <meta property="og:title" content="Avalanche Ecosystem — Navigate Avalanche’s connected on-chain economy">
-  <meta property="og:description" content="The Avalanche ecosystem comprises the Primary Network, sovereign Avalanche L1s, applications, assets, infrastructure, validators, and the AVAX token.">
-  <meta property="og:site_name" content="Avalanche Ecosystem dashboard"><meta property="og:image" content="https://avalanche-ecosystem.github.io/og-cover.png">
-  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Avalanche Ecosystem — Navigate Avalanche’s connected on-chain economy"><meta name="twitter:description" content="The Avalanche ecosystem comprises the Primary Network, sovereign Avalanche L1s, applications, assets, infrastructure, validators, and the AVAX token."><meta name="twitter:image" content="https://avalanche-ecosystem.github.io/og-cover.png">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"WebSite","@id":"https://avalanche-ecosystem.github.io/#website","url":"https://avalanche-ecosystem.github.io/","name":"Avalanche Ecosystem dashboard","inLanguage":"en-US"},
-      {"@type":"Thing","@id":"https://avalanche-ecosystem.github.io/#brand","name":"Avalanche Ecosystem",
-       "description":"The Avalanche ecosystem comprises the Primary Network, sovereign Avalanche L1s, applications, assets, infrastructure, validators, and the AVAX token.",
-       "sameAs":["https://www.avax.network/", "https://build.avax.network/", "https://github.com/ava-labs", "https://x.com/avax"]},
-      {"@type":"WebPage","@id":"https://avalanche-ecosystem.github.io/#webpage","url":"https://avalanche-ecosystem.github.io/","name":"Avalanche Ecosystem \u2014 Navigate Avalanche\u2019s connected on-chain economy","description":"The Avalanche ecosystem comprises the Primary Network, sovereign Avalanche L1s, applications, assets, infrastructure, validators, and the AVAX token.","isPartOf":{"@id":"https://avalanche-ecosystem.github.io/#website"},"about":{"@id":"https://avalanche-ecosystem.github.io/#brand"},"mainEntity":{"@id":"https://avalanche-ecosystem.github.io/#brand"},"inLanguage":"en-US","mentions":[{"@type":"Thing","name":"Avalanche L1s","sameAs":"https://build.avax.network/docs/avalanche-l1s"},{"@type":"Thing","name":"Avalanche Primary Network","sameAs":"https://build.avax.network/docs/primary-network"}]},
-      {"@type":"ItemList","@id":"https://avalanche-ecosystem.github.io/#resources","name":"Avalanche Ecosystem \u2014 resources & references","itemListElement":[{"@type":"ListItem","position":1,"name":"Avalanche L1s","url":"https://build.avax.network/docs/avalanche-l1s"},{"@type":"ListItem","position":2,"name":"Primary Network","url":"https://build.avax.network/docs/primary-network"},{"@type":"ListItem","position":3,"name":"AVAX Token","url":"https://build.avax.network/docs/primary-network/avax-token"},{"@type":"ListItem","position":4,"name":"Avalanche Overview","url":"https://en.wikipedia.org/wiki/Avalanche_%28blockchain_platform%29"},{"@type":"ListItem","position":5,"name":"Network Stats","url":"https://build.avax.network/stats/overview"},{"@type":"ListItem","position":6,"name":"DeFiLlama","url":"https://defillama.com/chain/avalanche"},{"@type":"ListItem","position":7,"name":"Avalanche Explorer","url":"https://subnets.avax.network/c-chain"},{"@type":"ListItem","position":8,"name":"CoinMarketCap","url":"https://coinmarketcap.com/currencies/avalanche/"},{"@type":"ListItem","position":9,"name":"DappRadar Rankings","url":"https://dappradar.com/rankings/protocol/avalanche"},{"@type":"ListItem","position":10,"name":"Create an Avalanche L1","url":"https://build.avax.network/docs/tooling/avalanche-cli/create-avalanche-l1"},{"@type":"ListItem","position":11,"name":"Deploy a Smart Contract","url":"https://build.avax.network/docs/avalanche-l1s/add-utility/deploy-smart-contract"},{"@type":"ListItem","position":12,"name":"Core Stake","url":"https://support.core.app/en/articles/8133766-core-web-what-is-core-stake"},{"@type":"ListItem","position":13,"name":"Core Wallet","url":"https://core.app/"},{"@type":"ListItem","position":14,"name":"Network Status","url":"https://status.avax.network/"},{"@type":"ListItem","position":15,"name":"Report Vulnerabilities","url":"https://support.avax.network/en/articles/6127575-how-do-i-report-bugs-and-security-vulnerabilities-to-the-avalanche-team"},{"@type":"ListItem","position":16,"name":"AvalancheGo Security","url":"https://github.com/ava-labs/avalanchego/security/policy"},{"@type":"ListItem","position":17,"name":"Avalanche Bridge FAQ","url":"https://support.avax.network/en/articles/6092559-avalanche-bridge-faq"}]}
-    ]
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avalanche Ecosystem — Chains, Subnets, AVAX & Projects Guide</title>
+<meta name="description" content="A guide to the Avalanche Ecosystem: the X-Chain, P-Chain and C-Chain, Subnets and Avalanche L1s, the AVAX token, Snowman consensus, and the major DeFi, gaming and NFT projects built on the network.">
+<link rel="canonical" href="https://avalanche-ecosystem.github.io/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Avalanche Ecosystem Explained">
+<meta property="og:url" content="https://avalanche-ecosystem.github.io/">
+<meta property="og:image" content="https://avalanche-ecosystem.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Avalanche Ecosystem Explained">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://avalanche-ecosystem.github.io/#website", "url": "https://avalanche-ecosystem.github.io/", "name": "Avalanche Ecosystem — Chains, Subnets, AVAX & Projects Guide"}, {"@type": "WebPage", "@id": "https://avalanche-ecosystem.github.io/#webpage", "url": "https://avalanche-ecosystem.github.io/", "name": "Avalanche Ecosystem — Chains, Subnets, AVAX & Projects Guide", "isPartOf": {"@id": "https://avalanche-ecosystem.github.io/#website"}, "description": "A guide to the Avalanche Ecosystem: the X-Chain, P-Chain and C-Chain, Subnets and Avalanche L1s, the AVAX token, Snowman consensus, and the major DeFi, gaming and NFT projects built on the network.", "datePublished": "2026-10-09", "dateModified": "2026-10-09"}, {"@type": "SoftwareApplication", "name": "Avalanche Ecosystem", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://avalanche-ecosystem.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Chains"}, {"@type": "ListItem", "position": 3, "name": "Avalanche Ecosystem"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Avalanche Ecosystem in simple terms?", "acceptedAnswer": {"@type": "Answer", "text": "It is the full set of chains, Subnets, validators and applications running on Avalanche, built around the X-Chain, P-Chain and C-Chain plus any independent Avalanche L1 a team has launched."}}, {"@type": "Question", "name": "What is the difference between a Subnet and an Avalanche L1?", "acceptedAnswer": {"@type": "Answer", "text": "They refer to the same underlying feature. 'Avalanche L1' is the newer name for a Subnet: an independent chain with its own validator set and rules that can still interoperate with the rest of the network."}}, {"@type": "Question", "name": "What does AVAX do in the Avalanche Ecosystem?", "acceptedAnswer": {"@type": "Answer", "text": "AVAX pays transaction fees on the C-Chain, is staked to secure the Primary Network, and is required to launch new Subnets. A portion of every fee is burned, linking usage to supply."}}, {"@type": "Question", "name": "How fast is Avalanche compared to other chains?", "acceptedAnswer": {"@type": "Answer", "text": "Avalanche typically finalizes transactions in roughly one to two seconds thanks to its Snowman consensus, which reaches agreement through repeated random sub-sampling rather than a single global vote."}}, {"@type": "Question", "name": "Can I use normal Ethereum tools on Avalanche?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The C-Chain is an Ethereum Virtual Machine instance, so wallets, contract languages and developer tooling built for Ethereum work on Avalanche with little to no modification."}}, {"@type": "Question", "name": "Do I need to run a validator to earn AVAX staking rewards?", "acceptedAnswer": {"@type": "Answer", "text": "No. Delegating AVAX to an existing validator through the P-Chain earns a share of staking rewards without the hardware or uptime requirements of running a validator node."}}, {"@type": "Question", "name": "Where can I check Avalanche transactions and balances?", "acceptedAnswer": {"@type": "Answer", "text": "Snowtrace is the standard C-Chain block explorer for checking balances, contract activity and transaction history on Avalanche."}}]}]}</script>
+<style>
+:root{--bg:#120B0D;--surface:#1D1316;--text:#F4EAEC;--muted:#A98A8F;--accent:#E84142;--accent-ink:#FFFFFF;--radius:16px;--display:"Manrope";--body:"Manrope"}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-width: 280px;
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+::selection {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+a {
+  color: var(--accent);
+  text-decoration-thickness: .075em;
+  text-underline-offset: .2em;
+  transition: color .18s ease, background .18s ease, border-color .18s ease;
+}
+a:hover {
+  color: var(--text);
+}
+a:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: calc(var(--radius) * .35);
+}
+img,
+svg,
+video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+img,
+video {
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--text);
+  font-family: var(--display);
+  font-weight: 650;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote {
+  margin-top: 0;
+}
+[hidden] {
+  display: none !important;
+}
+.caa2b27 {
+  width: min(100% - 6rem, 1240px);
+  margin-inline: auto;
+}
+.cd79594 {
+  position: absolute;
+  z-index: 20;
+  top: 1rem;
+  left: 1rem;
+  padding: .75rem 1.15rem;
+  transform: translateY(-180%);
+  border-radius: var(--radius);
+  color: var(--accent-ink);
+  background: var(--accent);
+  font-weight: 600;
+}
+.cd79594:focus {
+  transform: translateY(0);
+}
+.c8ff017 {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
+  background: var(--bg);
+}
+.cc9b5db {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 88px;
+  padding-block: 1rem;
+}
+.cd11fea {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -.04em;
+}
+.cc62ac9 {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--surface));
+  border-radius: calc(var(--radius) * .55);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+.cc62ac9 svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.c58c25c {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .5rem 0;
+  color: var(--text);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.c58c25c:hover {
+  color: var(--accent);
+}
+.ccae28e {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 15%, var(--bg));
+  background:
+    radial-gradient(ellipse at 95% 12%, color-mix(in srgb, var(--accent) 14%, transparent), color-mix(in srgb, var(--accent) 0%, transparent) 62%),
+    linear-gradient(130deg, var(--surface), color-mix(in srgb, var(--accent) 5%, var(--bg)) 70%, var(--bg));
+}
+.ccae28e::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 520px;
+  height: 520px;
+  right: -240px;
+  bottom: -310px;
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 65px color-mix(in srgb, var(--accent) 3%, transparent), 0 0 0 130px color-mix(in srgb, var(--accent) 2%, transparent);
+  pointer-events: none;
+}
+.c1a6158 {
+  padding-block: 1.6rem 5rem;
+}
+.c0d7ffb {
+  margin-bottom: 3.8rem;
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.6;
+}
+.c9855a1 {
+  display: inline;
+  color: var(--muted);
+  font-family: var(--body);
+  font-size: inherit;
+  text-decoration: none;
+}
+.c9855a1 a,
+a.c9855a1 {
+  color: var(--muted);
+  text-decoration: none;
+}
+.c9855a1 a:hover,
+a.c9855a1:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.c0d7ffb ol,
+.c0d7ffb ul,
+ol.c9855a1,
+ul.c9855a1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .45rem .7rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.c0d7ffb li {
+  display: inline;
+}
+.c0d7ffb [aria-current="page"] {
+  color: var(--text);
+}
+.c653b18 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-bottom: 1.35rem;
+  color: var(--accent);
+  font-size: .875rem;
+  font-weight: 600;
+}
+.c56a41a {
+  padding-block: .3rem;
+}
+.c6e7bf2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  max-width: 180px;
+  padding: .4rem .65rem;
+  border: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
+  border-radius: calc(var(--radius) * .6);
+  background: var(--surface);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--text) 4%, transparent);
+  color: var(--text);
+  font-size: .8rem;
+  line-height: 1;
+}
+.c6e7bf2:empty {
+  display: none;
+}
+.c6e7bf2 img,
+.c6e7bf2 svg {
+  display: block;
+  width: auto;
+  max-width: 148px;
+  height: 24px;
+  object-fit: contain;
+}
+.ccae28e h1 {
+  max-width: 1050px;
+  margin: 0 0 1.5rem;
+  font-family: var(--display);
+  font-size: clamp(2.7rem, 5.7vw, 5.1rem);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -.055em;
+  overflow-wrap: anywhere;
+}
+.ccae28e h1 em {
+  color: var(--accent);
+  font-style: normal;
+}
+.ccae28e h1 a {
+  color: inherit;
+}
+.ce67e24 {
+  max-width: 760px;
+  margin: 0 0 2.1rem;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+.c73b34a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  min-height: 54px;
+  padding: .85rem 1.35rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent-ink);
+  background: var(--accent);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 18%, transparent);
+  font-family: var(--body);
+  font-size: .95rem;
+  font-weight: 650;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.c73b34a:hover {
+  color: var(--accent-ink);
+  background: color-mix(in srgb, var(--accent) 92%, var(--text));
+  box-shadow: 0 9px 24px color-mix(in srgb, var(--accent) 24%, transparent);
+  transform: translateY(-2px);
+}
+.c81d93e {
+  font-family: var(--body);
+  font-size: 1.25em;
+  line-height: 1;
+}
+.ced6bfc {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem 4.5rem;
+}
+.c322184 {
+  min-width: 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 3px 12px color-mix(in srgb, var(--text) 3%, transparent);
+}
+.c322184 strong {
+  display: block;
+  margin-bottom: .2rem;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+.c322184 span {
+  display: block;
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.5;
+}
+.cceed79 {
+  display: grid;
+  grid-template-columns: 235px minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  padding-bottom: 4.5rem;
+}
+.cebea92 {
+  position: sticky;
+  top: 2rem;
+  min-width: 0;
+  max-height: calc(100dvh - 4rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--muted) 35%, var(--surface)) var(--surface);
+  padding: .3rem .75rem 1rem .25rem;
+}
+.cce36ad {
+  margin: 0 0 1.1rem;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: .95rem;
+  font-weight: 650;
+  letter-spacing: -.02em;
+}
+.c639f0f {
+  display: grid;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.c639f0f li {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+.c71f68b {
+  position: relative;
+  display: block;
+  padding: .7rem .9rem .7rem 1.1rem;
+  border-inline-start: 2px solid color-mix(in srgb, var(--muted) 18%, var(--bg));
+  border-radius: 0 calc(var(--radius) * .55) calc(var(--radius) * .55) 0;
+  color: var(--muted);
+  font-family: var(--body);
+  font-size: .85rem;
+  font-weight: 450;
+  line-height: 1.5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.c71f68b:hover {
+  border-inline-start-color: color-mix(in srgb, var(--accent) 45%, var(--bg));
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 5%, var(--bg));
+}
+.c71f68b[aria-current="location"] {
+  border-inline-start-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 9%, var(--bg));
+  font-weight: 650;
+}
+.c358125 {
+  margin: 1.65rem 0 0;
+  padding: 1.2rem 0 0;
+  border-top: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.65;
+}
+.cb99218 {
+  min-width: 0;
+}
+.c2618cd {
+  padding: clamp(1.3rem, 3vw, 2.3rem);
+  margin-bottom: 3.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--surface));
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 35px color-mix(in srgb, var(--text) 5%, transparent);
+  scroll-margin-top: 2rem;
+}
+.c558c1a {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+.c558c1a h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.3vw, 1.85rem);
+  letter-spacing: -.04em;
+}
+.c558c1a p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .8rem;
+}
+.c09dd2b {
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--surface);
+}
+.cf9f2a6 {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+  font-family: var(--body);
+  font-size: .925rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.cf9f2a6 caption {
+  padding: 0 0 1rem;
+  color: var(--muted);
+  font-size: .85rem;
+  text-align: left;
+}
+.cf9f2a6 th,
+.cf9f2a6 td {
+  padding: 1.05rem .85rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.cf9f2a6 th {
+  width: 37%;
+  color: var(--muted);
+  font-weight: 500;
+}
+.cf9f2a6 thead th {
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+  font-weight: 650;
+}
+.cf9f2a6 td {
+  font-weight: 550;
+}
+.cf9f2a6 tr > :first-child {
+  padding-left: 0;
+}
+.cf9f2a6 tr > :last-child {
+  padding-right: 0;
+}
+.cf9f2a6 tbody:last-child tr:last-child > *,
+.cf9f2a6 > tr:last-child > * {
+  border-bottom: 0;
+}
+.cf9f2a6 td p:last-child,
+.cf9f2a6 th p:last-child {
+  margin-bottom: 0;
+}
+.cb6d371 {
+  min-width: 0;
+}
+.c6ebb18 {
+  min-width: 0;
+  margin: 0 0 3.4rem;
+  scroll-margin-top: 2rem;
+}
+.c6ebb18 + .c6ebb18 {
+  padding-top: 2.8rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 11%, var(--bg));
+}
+.cb12d35 {
+  margin: 0 0 1.25rem;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: clamp(1.65rem, 2.8vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -.045em;
+}
+.c371013 {
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 1rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+.c371013 > :last-child {
+  margin-bottom: 0;
+}
+.c371013 p {
+  margin: 0 0 1.3rem;
+  text-wrap: pretty;
+}
+.c371013 h3 {
+  margin: 2rem 0 .9rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+}
+.c371013 h4,
+.c371013 h5,
+.c371013 h6 {
+  margin: 1.6rem 0 .75rem;
+  font-size: 1.075rem;
+  line-height: 1.4;
+}
+.c371013 h3:first-child,
+.c371013 h4:first-child {
+  margin-top: 0;
+}
+.c371013 strong,
+.c59cecd strong {
+  color: var(--text);
+  font-weight: 650;
+}
+.c371013 ul,
+.c371013 ol,
+.c59cecd ul,
+.c59cecd ol {
+  margin: 1.2rem 0 1.6rem;
+  padding-left: 1.5rem;
+}
+.c371013 li,
+.c59cecd li {
+  padding-left: .4rem;
+  margin-block: .55rem;
+}
+.c371013 li::marker,
+.c59cecd li::marker {
+  color: var(--accent);
+  font-weight: 600;
+}
+.c371013 li > ul,
+.c371013 li > ol {
+  margin-block: .5rem;
+}
+.c371013 li p {
+  margin-bottom: .6rem;
+}
+.c371013 blockquote {
+  margin: 1.8rem 0;
+  padding: 1.3rem 1.5rem;
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  color: var(--text);
+  font-size: 1.05rem;
+}
+.c371013 blockquote > :last-child {
+  margin-bottom: 0;
+}
+.c371013 blockquote cite {
+  display: block;
+  margin-top: .9rem;
+  color: var(--muted);
+  font-size: .85rem;
+  font-style: normal;
+}
+.c371013 table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.7rem 0;
+  overflow-x: auto;
+  border: 1px solid color-mix(in srgb, var(--text) 12%, var(--surface));
+  border-radius: var(--radius);
+  border-spacing: 0;
+  background: var(--surface);
+  font-family: var(--body);
+  font-size: .875rem;
+  line-height: 1.65;
+  text-align: left;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--surface);
+}
+.c371013 table caption {
+  padding: .9rem 1rem;
+  color: var(--muted);
+  font-size: .82rem;
+  text-align: left;
+}
+.c371013 th,
+.c371013 td {
+  min-width: 125px;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
+  vertical-align: top;
+}
+.c371013 th {
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  font-weight: 650;
+}
+.c371013 tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--text) 2%, var(--surface));
+}
+.c371013 tbody:last-child tr:last-child > * {
+  border-bottom: 0;
+}
+.c371013 td > :last-child,
+.c371013 th > :last-child {
+  margin-bottom: 0;
+}
+.c371013 figure {
+  margin: 1.8rem 0;
+}
+.c371013 figure img {
+  display: block;
+  border-radius: var(--radius);
+}
+.c371013 figcaption {
+  margin-top: .7rem;
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.6;
+}
+.c371013 code,
+.c59cecd code {
+  padding: .1em .35em;
+  border-radius: calc(var(--radius) * .25);
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  color: var(--text);
+  font-family: var(--body);
+  font-size: .9em;
+}
+.c371013 pre {
+  overflow-x: auto;
+  padding: 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--text) 10%, var(--surface));
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: .875rem;
+  line-height: 1.7;
+}
+.c371013 pre code {
+  padding: 0;
+  background: var(--surface);
+}
+.c371013 hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--text) 12%, var(--bg));
+}
+.c371013 dt {
+  margin-top: 1.1rem;
+  color: var(--text);
+  font-weight: 650;
+}
+.c371013 dd {
+  margin: .4rem 0 1rem;
+  color: var(--muted);
+}
+.ccd5e40 {
+  padding-top: 2.75rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 11%, var(--bg));
+  scroll-margin-top: 2rem;
+}
+.ccd5e40 > .cb12d35 {
+  margin-bottom: 1.65rem;
+}
+.c98e1a6 {
+  margin: 0 0 .8rem;
+  border: 1px solid color-mix(in srgb, var(--text) 11%, var(--surface));
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 3px 12px color-mix(in srgb, var(--text) 3%, transparent);
+  overflow: clip;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.c98e1a6:hover {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--surface));
+}
+.c98e1a6[open] {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--surface));
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--text) 4%, transparent);
+}
+.c730b55 {
+  position: relative;
+  display: block;
+  padding: 1.35rem 3.8rem 1.35rem 1.4rem;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 1.025rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -.015em;
+  list-style: none;
+  cursor: pointer;
+}
+.c730b55::-webkit-details-marker {
+  display: none;
+}
+.c730b55::after {
+  content: "+";
+  position: absolute;
+  top: 1.3rem;
+  right: 1.35rem;
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
+  color: var(--accent);
+  font-family: var(--body);
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.c98e1a6[open] > .c730b55::after {
+  content: "−";
+}
+.c98e1a6 > .c730b55:focus-visible {
+  outline-offset: -5px;
+}
+.c59cecd {
+  padding: 0 1.4rem 1.45rem;
+  color: var(--muted);
+  font-family: var(--body);
+  font-size: .95rem;
+  line-height: 1.8;
+}
+.c59cecd > :first-child {
+  margin-top: 0;
+}
+.c59cecd > :last-child {
+  margin-bottom: 0;
+}
+.c59cecd p {
+  margin-bottom: 1rem;
+}
+.cdc4638 {
+  padding-block: 3rem 3.6rem;
+  border-top: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
+  background: color-mix(in srgb, var(--surface) 70%, var(--bg));
+  scroll-margin-top: 2rem;
+}
+.c941dc5 {
+  display: grid;
+  grid-template-columns: 235px minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+}
+.c4fad65 h2 {
+  margin-bottom: .7rem;
+  font-size: 1.4rem;
+  letter-spacing: -.035em;
+}
+.c4fad65 p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.7;
+}
+.c85fd20 {
+  min-width: 0;
+}
+.ca0884f {
+  display: grid;
+  gap: .7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--body);
+}
+.cb8106c {
+  display: block;
+  min-width: 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--text) 9%, var(--surface));
+  border-radius: calc(var(--radius) * .75);
+  background: var(--surface);
+  color: var(--muted);
+  font-family: var(--body);
+  font-size: .875rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.cb8106c a,
+a.cb8106c {
+  color: var(--text);
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, var(--surface));
+  text-underline-offset: .25em;
+}
+.cb8106c a:hover,
+a.cb8106c:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+.cb8106c p {
+  margin: .4rem 0 0;
+}
+.cb8106c small {
+  color: var(--muted);
+  font-size: .8rem;
+}
+.ce96f67 {
+  border-top: 1px solid color-mix(in srgb, var(--text) 10%, var(--bg));
+  background: var(--bg);
+}
+.c9b0d54 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  min-height: 100px;
+  padding-block: 1.5rem;
+}
+.cd3a147 {
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+.ceb78a9 {
+  margin: 0;
+  color: var(--muted);
+  font-size: .8rem;
+}
+.ceb78a9 span {
+  color: var(--text);
+}
+@media (min-width: 1500px) {
+  .c1a6158 {
+    padding-bottom: 6rem;
   }
-  </script>
-  <style>
-:root{
-  --bg:#eef0f3; --bg-2:#e7eaef; --panel:#ffffff; --field:#f1f3f7; --field-2:#e9edf2;
-  --ink:#151a21; --text:#414954; --muted:#6a727d; --faint:#9aa2ad;
-  --line:rgba(20,26,33,.09); --line-2:rgba(20,26,33,.14);
-  --accent:#E84142; --accent-ink:#61191a; --accent-soft:rgba(232,65,66,0.13); --accent-glow:rgba(232,65,66,0.3);
-  --cta:#171a20; --cta-hover:#0a0c10; --cta-ink:#ffffff;
-  --shadow-card:0 1px 0 rgba(20,26,33,.02), 0 40px 80px -42px rgba(24,32,48,.40), 0 14px 30px -22px rgba(24,32,48,.24);
-  --shadow-pop:0 24px 60px -26px rgba(24,32,48,.38), 0 8px 20px -12px rgba(24,32,48,.22);
-  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
-  --font: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --ease: cubic-bezier(0.22, 0.7, 0.24, 1);
-  color-scheme: light;
+  .c0d7ffb {
+    margin-bottom: 4.5rem;
+  }
+  .cceed79 {
+    gap: 5.5rem;
+  }
+  .c941dc5 {
+    gap: 5.5rem;
+  }
 }
-html[data-theme="dark"]{
-  --bg:#0b0e13; --bg-2:#0e131b; --panel:#141a24; --field:#1b2230; --field-2:#232c3d;
-  --ink:#e9eef7; --text:#bcc5d6; --muted:#8b95a8; --faint:#606a7e;
-  --line:rgba(226,234,250,.10); --line-2:rgba(226,234,250,.18);
-  --accent:#ee7676; --accent-ink:#f3a0a0; --accent-soft:rgba(238,118,118,0.16); --accent-glow:rgba(238,118,118,0.34);
-  --cta:#ee7676; --cta-hover:#cc6565; --cta-ink:#ffffff;
-  --shadow-card:0 30px 70px -34px rgba(0,0,0,.66), 0 6px 18px -10px rgba(0,0,0,.5);
-  --shadow-pop:0 24px 60px -26px rgba(0,0,0,.7);
-  color-scheme: dark;
+@media (max-width: 1050px) {
+  .caa2b27 {
+    width: calc(100% - 3rem);
+  }
+  .cceed79,
+  .c941dc5 {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+  .ced6bfc {
+    gap: .75rem;
+  }
+  .c322184 {
+    padding: 1rem;
+  }
+  .c71f68b {
+    font-size: .8rem;
+  }
 }
-*{ box-sizing:border-box; }
-html{ height:100%; scroll-behavior:smooth; }
-@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
-body{ margin:0; min-width:320px; height:100%; overflow:hidden; color:var(--text); background:var(--bg); font-family:var(--font); font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
-a{ color:inherit; text-decoration:none; }
-button{ font:inherit; color:inherit; background:none; border:none; cursor:pointer; }
-img{ display:block; max-width:100%; }
-h1,h2,h3,p{ margin:0; }
-a:focus-visible, button:focus-visible, summary:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:10px; }
-.skip{ position:absolute; left:-999px; }
-.skip:focus{ left:12px; top:12px; z-index:120; padding:9px 15px; border-radius:10px; background:var(--cta); color:var(--cta-ink); font-weight:750; }
-.bg{ position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; background:
-  radial-gradient(1100px 700px at 82% 116%, var(--bg-2), transparent 60%),
-  radial-gradient(900px 620px at -6% -8%, var(--bg-2), transparent 58%); }
-.bg::before{ content:""; position:absolute; right:-14%; bottom:-30%; width:min(92vw,940px); aspect-ratio:1; border-radius:50%;
-  background:repeating-radial-gradient(circle at center, transparent 0 86px, var(--line) 86px 87px); opacity:.5; mask:radial-gradient(circle at center, #000 62%, transparent 72%); }
-.bg::after{ content:""; position:absolute; left:-10%; top:-16%; width:min(70vw,560px); aspect-ratio:1; border-radius:50%;
-  background:repeating-radial-gradient(circle at center, transparent 0 64px, var(--line) 64px 65px); opacity:.4; mask:radial-gradient(circle at center, #000 60%, transparent 72%); }
-.topbar{ position:relative; z-index:70; flex:0 0 auto; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px clamp(16px,3.4vw,34px);
-  background:color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter:saturate(140%) blur(12px); -webkit-backdrop-filter:saturate(140%) blur(12px); border-bottom:1px solid var(--line); }
-.tb-left{ display:flex; align-items:center; gap:12px; min-width:0; }
-.hamb{ display:grid; place-items:center; width:40px; height:40px; flex:0 0 auto; position:relative; border:1px solid var(--line-2); border-radius:12px; background:var(--panel); color:var(--ink); transition:border-color .15s var(--ease); }
-.hamb:hover{ border-color:var(--accent); }
-.hamb .bar{ position:absolute; left:11px; right:11px; height:2px; border-radius:2px; background:currentColor; transition:transform .24s var(--ease), opacity .18s var(--ease); }
-.hamb .bar:nth-child(1){ top:14px; } .hamb .bar:nth-child(2){ top:19px; } .hamb .bar:nth-child(3){ top:24px; }
-body.drawer-open .hamb .bar:nth-child(1){ transform:translateY(5px) rotate(45deg); }
-body.drawer-open .hamb .bar:nth-child(2){ opacity:0; }
-body.drawer-open .hamb .bar:nth-child(3){ transform:translateY(-5px) rotate(-45deg); }
-.brand{ display:flex; align-items:center; gap:11px; min-width:0; }
-.brand-logo{ width:34px; height:34px; flex:0 0 auto; display:grid; place-items:center; border-radius:10px; background:var(--panel); box-shadow:inset 0 0 0 1px var(--line-2); }
-.brand-logo img{ width:22px; height:22px; border-radius:50%; }
-.brand-name{ font-size:19px; font-weight:820; letter-spacing:-0.03em; color:var(--ink); line-height:1.1; white-space:nowrap; }
-.tb-right{ display:flex; align-items:center; gap:9px; }
-.theme-toggle{ display:inline-flex; align-items:center; gap:2px; padding:3px; border-radius:999px; background:var(--field); box-shadow:inset 0 0 0 1px var(--line); }
-.theme-toggle button{ display:grid; place-items:center; width:30px; height:30px; border-radius:999px; color:var(--muted); transition:color .15s var(--ease), background-color .15s var(--ease); }
-.theme-toggle button svg{ width:15px; height:15px; }
-.theme-toggle button[aria-pressed="true"]{ color:var(--ink); background:var(--panel); box-shadow:0 2px 8px -3px rgba(0,0,0,.28); }
-.btn-app{ display:inline-flex; align-items:center; gap:8px; padding:9px 15px; border-radius:11px; background:var(--panel); color:var(--ink); font-size:13.5px; font-weight:700; letter-spacing:-0.01em; box-shadow:inset 0 0 0 1px var(--line-2); transition:box-shadow .15s var(--ease), transform .15s var(--ease); white-space:nowrap; }
-.btn-app svg{ width:16px; height:16px; color:var(--muted); }
-.btn-app:hover{ box-shadow:inset 0 0 0 1px var(--accent); transform:translateY(-1px); }
-.btn-app:hover svg{ color:var(--accent-ink); }
-.scrim{ position:fixed; inset:0; z-index:80; background:rgba(10,14,17,.42); opacity:0; visibility:hidden; transition:opacity .28s var(--ease), visibility .28s var(--ease); }
-body.drawer-open .scrim{ opacity:1; visibility:visible; }
-.drawer{ position:fixed; z-index:90; top:0; left:0; height:100dvh; width:300px; max-width:86vw; display:flex; flex-direction:column; padding:16px 14px 16px; background:var(--panel); border-right:1px solid var(--line); box-shadow:var(--shadow-pop);
-  transform:translateX(-104%); transition:transform .3s var(--ease); overflow-y:auto; }
-body.drawer-open .drawer{ transform:translateX(0); }
-.drawer-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:2px 6px 8px; }
-.drawer-head .brand-name{ font-size:15px; }
-.drawer-close{ display:grid; place-items:center; width:34px; height:34px; border-radius:10px; color:var(--muted); }
-.drawer-close:hover{ color:var(--ink); background:var(--field); }
-.drawer-close svg{ width:17px; height:17px; }
-.nav-label{ margin:15px 12px 6px; font-size:10px; font-weight:750; letter-spacing:0.15em; text-transform:uppercase; color:var(--faint); }
-.nav-item{ display:flex; align-items:center; gap:12px; padding:9px 12px; border-radius:10px; color:var(--text); font-size:14px; font-weight:650; transition:color .15s var(--ease), background-color .15s var(--ease); }
-.nav-item .ni-ico{ width:18px; height:18px; flex:0 0 auto; color:var(--muted); }
-.nav-item.is-active{ color:var(--accent-ink); background:var(--accent-soft); }
-.nav-item.is-active .ni-ico{ color:var(--accent-ink); }
-.nav-item:hover{ color:var(--ink); background:var(--field); }
-.nav-group{ border-radius:10px; }
-.nav-group summary{ display:flex; align-items:center; gap:12px; padding:9px 12px; border-radius:10px; color:var(--text); font-size:14px; font-weight:650; cursor:pointer; list-style:none; transition:color .15s var(--ease), background-color .15s var(--ease); }
-.nav-group summary::-webkit-details-marker{ display:none; }
-.nav-group summary .ni-ico{ width:18px; height:18px; flex:0 0 auto; color:var(--muted); }
-.nav-group summary .chev{ width:15px; height:15px; margin-left:auto; color:var(--faint); transition:transform .2s var(--ease); }
-.nav-group summary:hover{ color:var(--ink); background:var(--field); }
-.nav-group[open] summary{ color:var(--ink); }
-.nav-group[open] summary .chev{ transform:rotate(180deg); }
-.nav-sub{ display:flex; flex-direction:column; gap:1px; padding:2px 0 8px 42px; }
-.nav-sub a{ display:flex; align-items:baseline; gap:7px; padding:6px 10px; border-radius:8px; color:var(--muted); font-size:12.5px; font-weight:550; transition:color .15s var(--ease), background-color .15s var(--ease); }
-.nav-sub a small{ color:var(--faint); font-size:10.5px; font-weight:500; }
-.nav-sub a:hover{ color:var(--accent-ink); background:var(--field); }
-.drawer-foot{ margin-top:auto; padding-top:13px; border-top:1px solid var(--line); }
-.disclose{ margin:8px 8px 0; font-size:11px; line-height:1.5; color:var(--muted); }
-.disclose strong{ color:var(--text); font-weight:750; }
-.fine{ margin:6px 8px 0; font-size:10.5px; line-height:1.45; color:var(--faint); }
-.app{ height:100dvh; display:flex; flex-direction:column; overflow:hidden; position:relative; z-index:1; }
-.wrap{ flex:1 1 auto; min-height:0; display:grid; place-items:center; overflow:hidden; }
-.stage{ width:100%; max-width:560px; max-height:100%; margin-inline:auto; padding:clamp(14px,3vh,36px) clamp(16px,3.4vw,26px); display:flex; flex-direction:column; align-items:center; text-align:center; }
-.lead{ margin:0 0 clamp(13px,2.2vh,20px); max-width:24ch; font-size:clamp(19px,2.5vw,27px); line-height:1.16; letter-spacing:-0.025em; font-weight:750; color:var(--ink); }
-.lead .hl{ color:var(--accent-ink); }
-.hero-chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:9px; margin-top:clamp(13px,2.2vh,18px); }
-.hchip{ display:inline-flex; align-items:baseline; gap:7px; padding:8px 13px; border-radius:12px; background:var(--panel); box-shadow:inset 0 0 0 1px var(--line); font-size:12px; font-weight:600; color:var(--muted); transition:box-shadow .15s var(--ease), color .15s var(--ease); }
-.hchip b{ color:var(--ink); font-family:var(--mono); font-size:12.5px; font-weight:650; font-variant-numeric:tabular-nums; }
-.hchip .ext{ color:var(--faint); font-size:10px; }
-a.hchip:hover{ box-shadow:inset 0 0 0 1px var(--accent); color:var(--text); }
-a.hchip:hover .ext{ color:var(--accent-ink); }
-.swap-card{ position:relative; width:min(480px,100%); border-radius:28px; background:var(--panel); padding:clamp(20px,4vw,30px); text-align:left; box-shadow:var(--shadow-card); }
-.card-head{ display:flex; align-items:center; justify-content:space-between; margin:2px 4px 17px; }
-.card-title{ font-size:15px; font-weight:800; letter-spacing:-0.02em; color:var(--ink); }
-.badge{ display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:999px; color:var(--accent-ink); background:var(--accent-soft); font-size:10px; font-weight:750; letter-spacing:0.07em; text-transform:uppercase; }
-.badge i{ width:6px; height:6px; border-radius:50%; background:var(--accent); }
-.field{ position:relative; padding:17px 18px 18px; border-radius:19px; background:var(--field); }
-.field + .field{ margin-top:6px; }
-.field-top{ display:flex; align-items:center; justify-content:space-between; }
-.field-label{ font-size:12px; font-weight:600; color:var(--muted); }
-.field-bal{ font-size:11px; font-weight:600; color:var(--faint); }
-.field-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:11px; min-width:0; }
-.amount{ min-width:0; }
-.amount b{ display:block; font-size:clamp(29px,5vw,38px); font-weight:750; line-height:1; letter-spacing:-0.02em; color:var(--ink); font-variant-numeric:tabular-nums; }
-.amount span{ display:block; margin-top:6px; font-size:11px; font-weight:600; color:var(--faint); }
-.token-pill{ display:inline-flex; align-items:center; gap:10px; flex:0 0 auto; padding:7px 12px 7px 8px; border-radius:999px; background:var(--panel); box-shadow:0 4px 14px -8px rgba(0,0,0,.4), inset 0 0 0 1px var(--line); transition:box-shadow .15s var(--ease); }
-.token-pill:hover{ box-shadow:0 6px 18px -8px rgba(0,0,0,.42), inset 0 0 0 1px var(--line-2); }
-.token-pill img{ width:26px; height:26px; flex:0 0 auto; border-radius:50%; }
-.token-meta{ display:flex; flex-direction:column; line-height:1.05; min-width:0; }
-.token-meta small{ font-size:9.5px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--faint); }
-.token-meta b{ font-size:15px; font-weight:800; letter-spacing:-0.01em; color:var(--ink); white-space:nowrap; }
-.token-pill .chev{ width:14px; height:14px; flex:0 0 auto; color:var(--faint); }
-.reverse{ position:relative; z-index:2; display:grid; place-items:center; width:40px; height:40px; margin:-14px auto; border:4px solid var(--panel); border-radius:13px; background:var(--field-2); color:var(--muted); box-shadow:0 6px 16px -8px rgba(0,0,0,.4); transition:transform .28s var(--ease), color .15s var(--ease), background-color .15s var(--ease); }
-.reverse svg{ width:16px; height:16px; }
-.reverse:hover{ color:var(--cta-ink); background:var(--accent); transform:rotate(180deg); }
-.details-btn{ display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:12px; padding:12px; border-radius:14px; background:var(--field); color:var(--muted); font-size:12px; font-weight:750; letter-spacing:0.06em; text-transform:uppercase; transition:color .15s var(--ease), background-color .15s var(--ease); }
-.details-btn svg{ width:14px; height:14px; transition:transform .2s var(--ease); }
-.details-btn:hover{ color:var(--ink); }
-.details-btn[aria-expanded="true"] svg{ transform:rotate(180deg); }
-.details{ overflow:hidden; max-height:0; opacity:0; transition:max-height .3s var(--ease), opacity .22s var(--ease), margin .3s var(--ease); }
-.details.open{ max-height:280px; opacity:1; margin-top:6px; }
-.d-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 8px; border-bottom:1px solid var(--line); }
-.d-row:last-child{ border-bottom:0; }
-.d-row span{ font-size:12.5px; font-weight:600; color:var(--muted); }
-.d-row b{ font-size:12.5px; font-weight:700; color:var(--text); }
-.d-row b.ok{ color:var(--accent-ink); }
-.d-row b.mono{ font-family:var(--mono); font-size:11px; }
-.cta{ display:flex; align-items:center; justify-content:center; gap:8px; margin-top:12px; padding:16px; border-radius:16px; background:var(--cta); color:var(--cta-ink); font-size:15px; font-weight:800; letter-spacing:0.03em; text-transform:uppercase; box-shadow:0 16px 34px -16px rgba(0,0,0,.5); transition:background-color .15s var(--ease), transform .15s var(--ease); }
-.cta svg{ width:16px; height:16px; }
-.cta:hover{ background:var(--cta-hover); transform:translateY(-1px); }
-.card-note{ margin:13px 4px 0; font-size:11px; line-height:1.5; color:var(--faint); text-align:center; }
-.card-note a{ color:var(--muted); text-decoration:underline; text-decoration-color:var(--line-2); text-underline-offset:2px; }
-.card-note a:hover{ color:var(--accent-ink); }
-@media (max-width:560px){
-  .brand-name{ font-size:16px; } .btn-app span{ display:none; } .btn-app{ padding:9px 11px; }
-  .stage{ padding:12px 16px; }
-  .lead{ font-size:clamp(18px,5.5vw,24px); margin-bottom:14px; }
-  .swap-card{ padding:18px; } .field{ padding:14px 15px 15px; } .amount b{ font-size:29px; }
-  .hero-chips{ margin-top:12px; }
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 1rem;
+  }
+  .cc9b5db {
+    min-height: 72px;
+  }
+  .c1a6158 {
+    padding-block: 1.25rem 3.25rem;
+  }
+  .c0d7ffb {
+    margin-bottom: 2.6rem;
+  }
+  .ccae28e h1 {
+    max-width: 100%;
+    font-size: clamp(2.45rem, 7.4vw, 3.6rem);
+    letter-spacing: -.045em;
+  }
+  .ce67e24 {
+    font-size: 1.05rem;
+  }
+  .ced6bfc {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-block: 1.2rem 2.5rem;
+  }
+  .cceed79 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.3rem;
+    padding-bottom: 3rem;
+  }
+  .cebea92 {
+    position: static;
+    max-height: none;
+    padding: 1.2rem;
+    border: 1px solid color-mix(in srgb, var(--text) 10%, var(--surface));
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .cce36ad {
+    margin-bottom: .8rem;
+  }
+  .c639f0f {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .4rem .8rem;
+  }
+  .c71f68b {
+    height: 100%;
+    padding-block: .7rem;
+    font-size: .825rem;
+  }
+  .c358125 {
+    display: none;
+  }
+  .c2618cd {
+    margin-bottom: 2.5rem;
+  }
+  .c6ebb18 {
+    margin-bottom: 2.6rem;
+  }
+  .c6ebb18 + .c6ebb18 {
+    padding-top: 2.2rem;
+  }
+  .c941dc5 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+  .cdc4638 {
+    padding-block: 2.5rem;
+  }
+  .c6ebb18,
+  .c2618cd,
+  .ccd5e40,
+  .cdc4638 {
+    scroll-margin-top: 1rem;
+  }
 }
-@media (max-height:700px){ .lead{ font-size:clamp(17px,4.5vw,21px); margin-bottom:10px; } .hero-chips{ display:none; } }
-@media (max-height:600px){ .field{ padding:12px 15px 13px; } .amount b{ font-size:26px; } .details-btn{ margin-top:8px; padding:9px; } .cta{ padding:14px; margin-top:8px; } }
-@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
-.stage.is-hero{ max-width:780px; }
-.hero{ display:flex; flex-direction:column; align-items:center; text-align:center; }
-.hero-h2{ margin:0; max-width:17ch; font-size:clamp(31px,5.8vw,56px); line-height:1.04; letter-spacing:-0.035em; font-weight:830; color:var(--ink); }
-.hero-h2 .hl{ color:var(--accent-ink); }
-.hero-sub{ margin:clamp(16px,2.8vh,23px) auto 0; max-width:54ch; font-size:clamp(15px,1.65vw,18px); line-height:1.58; color:var(--muted); font-weight:450; }
-.hero-cta{ display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; margin-top:clamp(22px,3.6vh,32px); }
-.hero-cta .cta{ margin-top:0; text-transform:none; letter-spacing:0.005em; padding:15px 26px; font-size:15px; border-radius:14px; }
-.hero-cta .cta-ghost{ background:var(--panel); color:var(--ink); box-shadow:inset 0 0 0 1px var(--line-2); }
-.hero-cta .cta-ghost:hover{ background:var(--field); box-shadow:inset 0 0 0 1px var(--accent); transform:translateY(-1px); }
-@media (max-width:560px){ .hero-cta{ flex-direction:column; width:100%; max-width:340px; } .hero-cta .cta{ width:100%; } }
-@media (max-height:640px){ .hero-sub{ font-size:14px; margin-top:12px; } .hero-chips{ display:none; } }
-  </style>
-  <script>document.documentElement.classList.add('js')</script>
+@media (max-width: 440px) {
+  .caa2b27 {
+    width: calc(100% - 2rem);
+  }
+  .cc9b5db {
+    gap: 1rem;
+  }
+  .cd11fea {
+    gap: .5rem;
+    font-size: 1.05rem;
+  }
+  .c58c25c {
+    gap: .45rem;
+    font-size: .8rem;
+  }
+  .c653b18 {
+    gap: .65rem;
+    margin-bottom: 1.1rem;
+  }
+  .ccae28e h1 {
+    font-size: 2.5rem;
+  }
+  .c73b34a {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .c322184 {
+    padding: .9rem;
+  }
+  .c322184 strong {
+    font-size: .9rem;
+  }
+  .c322184 span {
+    font-size: .75rem;
+  }
+  .c639f0f {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .c2618cd {
+    padding: 1.15rem;
+  }
+  .cf9f2a6 {
+    font-size: .85rem;
+  }
+  .cf9f2a6 th,
+  .cf9f2a6 td {
+    padding-block: .9rem;
+    padding-inline: .5rem;
+  }
+  .c371013 {
+    font-size: .95rem;
+    line-height: 1.8;
+  }
+  .c371013 blockquote {
+    padding: 1rem 1.1rem;
+  }
+  .c730b55 {
+    padding: 1.1rem 3rem 1.1rem 1.1rem;
+    font-size: .95rem;
+  }
+  .c730b55::after {
+    top: 1.1rem;
+    right: .9rem;
+  }
+  .c59cecd {
+    padding: 0 1.1rem 1.2rem;
+    font-size: .9rem;
+  }
+  .c9b0d54 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .6rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+  .c73b34a:hover {
+    transform: none;
+  }
+}
+@media print {
+  body {
+    background: var(--surface);
+    font-size: 10pt;
+  }
+  .caa2b27 {
+    width: 100%;
+  }
+  .c8ff017,
+  .cd79594,
+  .c73b34a,
+  .cebea92,
+  .ccae28e::after {
+    display: none;
+  }
+  .ccae28e {
+    background: var(--surface);
+  }
+  .c1a6158 {
+    padding-block: 1rem 2rem;
+  }
+  .c0d7ffb {
+    margin-bottom: 1.5rem;
+  }
+  .ccae28e h1 {
+    font-size: 32pt;
+  }
+  .ced6bfc {
+    margin-bottom: 2rem;
+  }
+  .cceed79,
+  .c941dc5 {
+    display: block;
+  }
+  .c2618cd,
+  .c322184,
+  .c98e1a6 {
+    box-shadow: none;
+  }
+  .cb12d35,
+  .c371013 h3 {
+    break-after: avoid;
+  }
+  .c98e1a6,
+  .cb8106c,
+  .c371013 tr {
+    break-inside: avoid;
+  }
+  .c4fad65 {
+    margin-bottom: 1rem;
+  }
+}
+</style>
 </head>
 <body>
-  <a class="skip" href="#route-preview">Skip to preview</a>
-  <div class="bg" aria-hidden="true"></div>
-
-  <div class="app">
-  <header class="topbar">
-    <div class="tb-left">
-      <button class="hamb" type="button" id="hamb" aria-label="Open navigation" aria-controls="drawer" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-      <div class="brand"><span class="brand-logo"><img src="favicon.png" width="22" height="22" alt="Avalanche Ecosystem logo"></span><h1 class="brand-name">Avalanche Ecosystem</h1></div>
+<a class="cd79594" href="#guide-main">Skip to guide</a>
+<header class="c8ff017">
+  <div class="caa2b27 cc9b5db">
+    <div class="cd11fea">
+      <span class="cc62ac9" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v14h-6a3 3 0 0 0-2 1 3 3 0 0 0-2-1H4zM12 6.5v14M7 9h2M15 9h2M7 12h2M15 12h2"/></svg></span>
+      <span>The guide</span>
     </div>
-    <div class="tb-right">
-      <div class="theme-toggle" role="group" aria-label="Color theme">
-        <button type="button" id="theme-light" aria-pressed="true" aria-label="Light theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg></button>
-        <button type="button" id="theme-dark" aria-pressed="false" aria-label="Dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a6.5 6.5 0 1 0 10.5 10.5z"/></svg></button>
-      </div>
-      <a class="btn-app" href="dashboard/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M16 11h2"/></svg><span>Open app</span></a>
-    </div>
-  </header>
-
-  <div class="scrim" id="scrim" tabindex="-1"></div>
-  <aside class="drawer" id="drawer" aria-label="Primary" aria-hidden="true">
-    <div class="drawer-head">
-      <div class="brand"><span class="brand-logo"><img src="favicon.png" width="22" height="22" alt=""></span><span class="brand-name">Avalanche Ecosystem</span></div>
-      <button class="drawer-close" type="button" id="drawer-close" aria-label="Close navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    </div>
-    <nav aria-label="Sections">
-      <p class="nav-label">Bridge</p>
-      <a class="nav-item is-active" href="#route-preview" aria-current="page"><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 10h11l-3-3M17 14H6l3 3"/></svg>Route preview</a>
-      <p class="nav-label">Understand</p>
-      <details class="nav-group" open><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Network essentials<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://build.avax.network/docs/avalanche-l1s" target="_blank" rel="noopener noreferrer">Avalanche L1s <small>Sovereign network architecture</small></a><a href="https://build.avax.network/docs/primary-network" target="_blank" rel="noopener noreferrer">Primary Network <small>Three-chain network structure</small></a><a href="https://build.avax.network/docs/primary-network/avax-token" target="_blank" rel="noopener noreferrer">AVAX Token <small>Utility and tokenomics</small></a><a href="https://en.wikipedia.org/wiki/Avalanche_%28blockchain_platform%29" target="_blank" rel="noopener noreferrer">Avalanche Overview <small>Independent platform background</small></a></div></details>
-      <p class="nav-label">Markets &amp; data</p>
-      <details class="nav-group"><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Live ecosystem signals<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://build.avax.network/stats/overview" target="_blank" rel="noopener noreferrer">Network Stats <small>Official Avalanche metrics</small></a><a href="https://defillama.com/chain/avalanche" target="_blank" rel="noopener noreferrer">DeFiLlama <small>TVL and activity</small></a><a href="https://subnets.avax.network/c-chain" target="_blank" rel="noopener noreferrer">Avalanche Explorer <small>C-Chain blocks transactions</small></a><a href="https://coinmarketcap.com/currencies/avalanche/" target="_blank" rel="noopener noreferrer">CoinMarketCap <small>AVAX market data</small></a><a href="https://dappradar.com/rankings/protocol/avalanche" target="_blank" rel="noopener noreferrer">DappRadar Rankings <small>Avalanche application activity</small></a></div></details>
-      <p class="nav-label">Guides</p>
-      <details class="nav-group"><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Build and participate<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://build.avax.network/docs/tooling/avalanche-cli/create-avalanche-l1" target="_blank" rel="noopener noreferrer">Create an Avalanche L1 <small>CLI deployment walkthrough</small></a><a href="https://build.avax.network/docs/avalanche-l1s/add-utility/deploy-smart-contract" target="_blank" rel="noopener noreferrer">Deploy a Smart Contract <small>EVM contract deployment</small></a><a href="https://support.core.app/en/articles/8133766-core-web-what-is-core-stake" target="_blank" rel="noopener noreferrer">Core Stake <small>Native staking interface</small></a><a href="https://core.app/" target="_blank" rel="noopener noreferrer">Core Wallet <small>Official wallet application</small></a></div></details>
-      <p class="nav-label">Safety</p>
-      <details class="nav-group"><summary><svg class="ni-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h10a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-1a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h2z"/></svg>Verify before acting<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="nav-sub"><a href="https://status.avax.network/" target="_blank" rel="noopener noreferrer">Network Status <small>Official service availability</small></a><a href="https://support.avax.network/en/articles/6127575-how-do-i-report-bugs-and-security-vulnerabilities-to-the-avalanche-team" target="_blank" rel="noopener noreferrer">Report Vulnerabilities <small>Official disclosure process</small></a><a href="https://github.com/ava-labs/avalanchego/security/policy" target="_blank" rel="noopener noreferrer">AvalancheGo Security <small>Node security policy</small></a><a href="https://support.avax.network/en/articles/6092559-avalanche-bridge-faq" target="_blank" rel="noopener noreferrer">Avalanche Bridge FAQ <small>Bridge requirements warnings</small></a></div></details>
+    <a class="c58c25c" href="dashboard/">Open app <span class="c81d93e" aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<section class="ccae28e" aria-labelledby="guide-title">
+  <div class="caa2b27 c1a6158">
+    <nav class="c0d7ffb" aria-label="Breadcrumb"><nav class="c9855a1" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Chains</span> <span>/</span> <span>Avalanche Ecosystem</span></nav></nav>
+    <div class="c653b18"><span class="c56a41a">A closer look</span><span class="c6e7bf2"><img src="assets/tokens/avalanche.svg" alt="Avalanche" width="28" height="28"></span></div>
+    <h1 id="guide-title">The <em>Avalanche Ecosystem</em>.</h1>
+    <p class="ce67e24">The <strong>Avalanche Ecosystem</strong> is the network of chains, applications and validators built around Avalanche's three built-in chains and its growing set of custom Subnets. It spans a base layer used for trading, staking and governance, plus dozens of independent Avalanche L1s running their own rules for gaming, finance and enterprise use. This guide walks through the architecture, the AVAX token, the consensus method that secures it, and how a newcomer actually gets involved.</p>
+    <a class="c73b34a" href="dashboard/">Open dashboard <span class="c81d93e" aria-hidden="true">↗</span></a>
+  </div>
+</section>
+<div class="caa2b27">
+  <div class="ced6bfc" aria-label="Guide highlights">
+    <div class="c322184"><strong>Key facts</strong><span>The essentials at a glance</span></div>
+    <div class="c322184"><strong>In depth</strong><span>Explore the details</span></div>
+    <div class="c322184"><strong>Questions answered</strong><span>Find a little more clarity</span></div>
+    <div class="c322184"><strong>Sources</strong><span>Follow the references</span></div>
+  </div>
+  <div class="cceed79">
+    <nav class="cebea92" aria-labelledby="toc-title">
+      <h2 class="cce36ad" id="toc-title">On this page</h2>
+      <ul class="c639f0f" id="toc-list">
+        <li><a class="c71f68b" href="#key-facts">Key facts</a></li>
+        <li><a class="c71f68b" href="#guide-sections" data-sections-link>In depth</a></li>
+        <li><a class="c71f68b" href="#questions">Questions &amp; answers</a></li>
+        <li><a class="c71f68b" href="#sources">Sources</a></li>
+      </ul>
+      <p class="c358125">Read from the beginning, or jump to the details you need.</p>
     </nav>
-    <div class="drawer-foot">
-      <p class="disclose"><strong>Independent dashboard.</strong> Not affiliated with any protocol or issuer named here.</p>
-      <p class="fine">Live figures come from public third-party sources and change. Educational reference only.</p>
-    </div>
-  </aside>
-
-  <div class="wrap">
-    <main class="stage is-hero">
-      <div class="hero" id="app">
-        <h2 class="hero-h2">Navigate Avalanche’s connected <span class="hl">on-chain economy</span></h2>
-        <p class="hero-sub">Track Avalanche networks, applications, markets, and developer resources from one source-backed ecosystem overview.</p>
-        <div class="hero-cta">
-          <a class="cta cta-primary" href="dashboard/" target="_blank" rel="noopener noreferrer">Enter Dashboard <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-          <a class="cta cta-ghost" href="https://build.avax.network/stats/overview" target="_blank" rel="noopener noreferrer">View network stats</a>
-        </div>
-      </div>
-      <div class="hero-chips">
-        <a class="hchip" href="https://coinmarketcap.com/currencies/avalanche/" target="_blank" rel="noopener noreferrer">AVAX Price <b id="sig0">—</b> <span class="ext" aria-hidden="true">↗</span></a>
-          <a class="hchip" href="https://defillama.com/chain/avalanche" target="_blank" rel="noopener noreferrer">Avalanche TVL <b id="sig1">—</b> <span class="ext" aria-hidden="true">↗</span></a>
-          <a class="hchip" href="https://subnets.avax.network/c-chain" target="_blank" rel="noopener noreferrer">C-Chain Gas <b id="sig2">—</b> <span class="ext" aria-hidden="true">↗</span></a>
-      </div>
+    <main class="cb99218" id="guide-main" tabindex="-1">
+      <section class="c2618cd" id="key-facts" aria-labelledby="facts-title">
+        <div class="c558c1a"><h2 id="facts-title">Key facts</h2><p>At a glance</p></div>
+        <div class="c09dd2b"><table class="cf9f2a6"><tbody><tr><th scope="row">Launched</th><td>Mainnet live since September 2020</td></tr>
+<tr><th scope="row">Core chains</th><td>X-Chain, P-Chain and C-Chain</td></tr>
+<tr><th scope="row">Consensus</th><td>Snowman (DAG-based Avalanche consensus)</td></tr>
+<tr><th scope="row">Native token</th><td>AVAX — gas, staking and fee-burning</td></tr>
+<tr><th scope="row">Block finality</th><td>Roughly one to two seconds</td></tr>
+<tr><th scope="row">Scaling model</th><td>Subnets / Avalanche L1s with custom validator sets</td></tr></tbody></table></div>
+      </section>
+      <div class="cb6d371" id="guide-sections"><section class="c6ebb18"><h2 class="cb12d35">What Is the Avalanche Ecosystem?</h2><div class="c371013"><strong>The Avalanche Ecosystem is the collection of chains, Subnets, wallets and applications that run on top of Avalanche's base protocol, all secured by its own validator set and AVAX token.</strong> Unlike a single monolithic blockchain, Avalanche splits work across three purpose-built chains by default and lets any team launch an additional, fully independent chain alongside them. That design is what lets the network host everything from a stablecoin exchange to a game that needs its own gas token, without every transaction competing for the same block space. New participants usually meet this network through one chain first and only later realize how many independent chains sit behind it.<h3>The Three Built-In Chains: X, P and C</h3>The <strong>X-Chain</strong> handles asset creation and transfers using a UTXO model built for speed. The <strong>P-Chain</strong> coordinates validators, tracks staking and manages the creation of new Subnets. The <strong>C-Chain</strong> is an Ethereum Virtual Machine instance, which is why most smart contracts, DeFi apps and NFT collections in the Avalanche Ecosystem deploy there using the same tooling developers already use on <a href="https://ethereum.org/" rel="nofollow noopener" target="_blank">Ethereum</a>.<h3>Primary Network and Validators</h3>Every chain above sits inside the Primary Network, the baseline validator set that also secures every optional Subnet unless a Subnet chooses its own. Validators stake AVAX to join, and the full technical breakdown of how chains interact is kept current in the <a href="https://docs.avax.network/" rel="nofollow noopener" target="_blank">Avalanche docs</a>.</div></section>
+<section class="c6ebb18"><h2 class="cb12d35">Subnets and Avalanche L1s: Scaling the Avalanche Ecosystem</h2><div class="c371013">A Subnet, now commonly called an Avalanche L1, is an independent blockchain with its own validator set, its own rules and often its own gas token, while still being able to talk to other chains in the network. This is the structural reason the network can support very different kinds of applications at once: a gaming studio and a regulated financial institution can each run a chain tuned to their own needs instead of sharing one global fee market, and each can tune its own block time, fee token and validator permissions without asking anyone else for approval.<h3>Why Teams Launch Custom Avalanche L1s</h3>Running a dedicated L1 means no congestion from unrelated traffic, custom fee tokens, and the ability to set permissions for who can validate or even who can transact. Studios building on-chain games use this to guarantee cheap, predictable transactions no matter what else is happening elsewhere on the network.<h3>Notable Subnets in Production</h3>Gaming-focused chains, institutional DeFi networks and specialized compute Subnets have all launched on Avalanche, and their combined activity and liquidity can be tracked on aggregators such as <a href="https://defillama.com/" rel="nofollow noopener" target="_blank">DefiLlama</a>, which lists Avalanche and several of its L1s separately.</div></section>
+<section class="c6ebb18"><h2 class="cb12d35">AVAX: The Token Powering the Avalanche Ecosystem</h2><div class="c371013">AVAX is the native asset used to pay transaction fees on the C-Chain, to stake and secure the Primary Network, and to launch new Subnets. A portion of every fee paid in AVAX is burned rather than redistributed, which ties network usage directly to a shrinking supply. Holders can check balances, validator activity and token transfers directly on <a href="https://snowtrace.io/" rel="nofollow noopener" target="_blank">Snowtrace</a>, the Avalanche C-Chain block explorer.<table><thead><tr><th>Role</th><th>Minimum Requirement</th><th>Typical Lock Period</th></tr></thead><tbody><tr><td>Validator</td><td>2,000 AVAX staked</td><td>2 weeks to 1 year</td></tr><tr><td>Delegator</td><td>25 AVAX delegated</td><td>2 weeks to 1 year</td></tr><tr><td>Subnet validator</td><td>Set by the Subnet</td><td>Defined by Subnet rules</td></tr></tbody></table></div></section>
+<section class="c6ebb18"><h2 class="cb12d35">DeFi, Gaming and NFTs Across the Avalanche Ecosystem</h2><div class="c371013">The C-Chain's compatibility with Ethereum tooling made it straightforward for existing protocols to deploy on Avalanche, the network now covers lending markets, decentralized exchanges, perpetuals platforms, NFT marketplaces and a sizeable cluster of on-chain games. Liquidity and trading volume across these categories move with the broader market, but the chain's low fees and fast finality keep it a common destination for projects that need frequent, cheap on-chain actions, from repeated in-game item trades to automated market-maker rebalancing that would be too costly on a slower, more expensive chain.<h3>DeFi and Liquidity</h3>Lending protocols, automated market makers and yield strategies on Avalanche generally mirror designs first proven on Ethereum, adapted for the C-Chain's faster block times.<h3>Gaming and NFTs</h3>Several gaming studios chose Avalanche L1s specifically so in-game items, currencies and marketplaces never compete with unrelated DeFi traffic for block space.</div></section>
+<section class="c6ebb18"><h2 class="cb12d35">How Snowman Consensus Secures the Avalanche Ecosystem</h2><div class="c371013">Avalanche does not use the same proof-of-work or classic proof-of-stake voting most chains rely on. Validators repeatedly sample a small random subset of their peers and converge on an answer through many rounds of these sub-sampled votes, reaching finality in roughly one to two seconds. The chain-based variant used on the C-Chain and P-Chain is called Snowman; the X-Chain uses a related DAG-based form of the same family. The mechanism is described in Avalanche's original research and summarized alongside other consensus families on <a href="https://en.wikipedia.org/wiki/Avalanche_(blockchain_platform)" rel="nofollow noopener" target="_blank">Wikipedia</a>. This approach lets the network add validators without a proportional slowdown in confirmation time, which matters as more Subnets come online and each one draws on the same pool of Primary Network validators for security.</div></section>
+<section class="c6ebb18"><h2 class="cb12d35">Getting Started in the Avalanche Ecosystem</h2><div class="c371013">Entering the Avalanche Ecosystem does not require running a validator. Most newcomers start with a wallet, move funds onto the C-Chain, and explore from there, adding a specific Avalanche L1 to their wallet later only once they find an application that needs it.<ul><li>Install a wallet that supports Avalanche, such as Core or MetaMask with the C-Chain network added.</li><li>Bridge AVAX or a stablecoin from another chain, or acquire AVAX directly on an exchange.</li><li>Connect the wallet to a DeFi app, marketplace or game running on the C-Chain or a specific Avalanche L1.</li><li>Delegate AVAX to an active validator through the P-Chain if you want staking rewards without running infrastructure.</li><li>Track positions and transactions on Snowtrace as you go.</li></ul><h3>Setting Up a Wallet and Bridging In</h3>Any wallet supporting the C-Chain works for everyday use. Funds typically arrive through a bridge from Ethereum or another chain, or by buying AVAX on an exchange and withdrawing it directly to a C-Chain address.<h3>Staking AVAX as a Validator or Delegator</h3>Running a validator requires 2,000 AVAX and dedicated hardware uptime, which is why most individual holders delegate instead: a delegator stakes a smaller amount through the P-Chain and shares in a validator's rewards without managing the node.</div></section>
+<section class="c6ebb18"><h2 class="cb12d35">Avalanche Ecosystem vs Other Layer-1 Ecosystems</h2><div class="c371013">Compared with a single monolithic chain, the main advantage of this layout is isolation: congestion or an exploit on one Subnet does not slow down the C-Chain or any other L1. The tradeoff is fragmented liquidity, since assets and users are spread across more than one chain instead of concentrated in one shared pool. Whether that tradeoff favors Avalanche over a single-chain network depends on whether an application needs dedicated throughput badly enough to give up shared liquidity, a decision more projects are making as the number of live Subnets keeps growing and as bridges between them keep getting cheaper and faster to use.</div></section></div>
+      <section class="ccd5e40" id="questions" aria-labelledby="questions-title">
+        <h2 class="cb12d35" id="questions-title">Questions &amp; answers</h2>
+        <details class="c98e1a6"><summary class="c730b55">What is the Avalanche Ecosystem in simple terms?</summary><div class="c59cecd">It is the full set of chains, Subnets, validators and applications running on Avalanche, built around the X-Chain, P-Chain and C-Chain plus any independent Avalanche L1 a team has launched.</div></details>
+<details class="c98e1a6"><summary class="c730b55">What is the difference between a Subnet and an Avalanche L1?</summary><div class="c59cecd">They refer to the same underlying feature. 'Avalanche L1' is the newer name for a Subnet: an independent chain with its own validator set and rules that can still interoperate with the rest of the network.</div></details>
+<details class="c98e1a6"><summary class="c730b55">What does AVAX do in the Avalanche Ecosystem?</summary><div class="c59cecd">AVAX pays transaction fees on the C-Chain, is staked to secure the Primary Network, and is required to launch new Subnets. A portion of every fee is burned, linking usage to supply.</div></details>
+<details class="c98e1a6"><summary class="c730b55">How fast is Avalanche compared to other chains?</summary><div class="c59cecd">Avalanche typically finalizes transactions in roughly one to two seconds thanks to its Snowman consensus, which reaches agreement through repeated random sub-sampling rather than a single global vote.</div></details>
+<details class="c98e1a6"><summary class="c730b55">Can I use normal Ethereum tools on Avalanche?</summary><div class="c59cecd">Yes. The C-Chain is an Ethereum Virtual Machine instance, so wallets, contract languages and developer tooling built for Ethereum work on Avalanche with little to no modification.</div></details>
+<details class="c98e1a6"><summary class="c730b55">Do I need to run a validator to earn AVAX staking rewards?</summary><div class="c59cecd">No. Delegating AVAX to an existing validator through the P-Chain earns a share of staking rewards without the hardware or uptime requirements of running a validator node.</div></details>
+<details class="c98e1a6"><summary class="c730b55">Where can I check Avalanche transactions and balances?</summary><div class="c59cecd">Snowtrace is the standard C-Chain block explorer for checking balances, contract activity and transaction history on Avalanche.</div></details>
+      </section>
     </main>
   </div>
+</div>
+<section class="cdc4638" id="sources" aria-labelledby="sources-title">
+  <div class="caa2b27 c941dc5">
+    <div class="c4fad65"><h2 id="sources-title">Sources</h2><p>References for further reading.</p></div>
+    <div class="c85fd20"><ul class="ca0884f"><li><a class="cb8106c" href="https://docs.avax.network/" rel="nofollow noopener" target="_blank">Avalanche documentation</a></li>
+<li><a class="cb8106c" href="https://snowtrace.io/" rel="nofollow noopener" target="_blank">Snowtrace (Avalanche C-Chain explorer)</a></li>
+<li><a class="cb8106c" href="https://defillama.com/" rel="nofollow noopener" target="_blank">DefiLlama — Avalanche ecosystem data</a></li>
+<li><a class="cb8106c" href="https://en.wikipedia.org/wiki/Avalanche_(blockchain_platform)" rel="nofollow noopener" target="_blank">Avalanche (blockchain platform) — Wikipedia</a></li></ul></div>
   </div>
-
-  <script>
-  (function(){
-    "use strict";
-    var $=function(id){ return document.getElementById(id); };
-    var root=document.documentElement, tl=$("theme-light"), td=$("theme-dark");
-    function applyTheme(t){ if(t==="dark"){ root.setAttribute("data-theme","dark"); } else { root.removeAttribute("data-theme"); } if(tl) tl.setAttribute("aria-pressed", String(t!=="dark")); if(td) td.setAttribute("aria-pressed", String(t==="dark")); }
-    var saved=null; try{ saved=localStorage.getItem("avalanchee-theme"); }catch(e){}
-    if(saved) applyTheme(saved);
-    function setTheme(t){ applyTheme(t); try{ localStorage.setItem("avalanchee-theme", t); }catch(e){} }
-    if(tl) tl.addEventListener("click", function(){ setTheme("light"); });
-    if(td) td.addEventListener("click", function(){ setTheme("dark"); });
-    var body=document.body, hamb=$("hamb"), scrim=$("scrim"), drawer=$("drawer"), dclose=$("drawer-close");
-    function openD(){ body.classList.add("drawer-open"); hamb.setAttribute("aria-expanded","true"); drawer.setAttribute("aria-hidden","false"); }
-    function closeD(){ body.classList.remove("drawer-open"); hamb.setAttribute("aria-expanded","false"); drawer.setAttribute("aria-hidden","true"); }
-    if(hamb) hamb.addEventListener("click", function(){ body.classList.contains("drawer-open")?closeD():openD(); });
-    if(scrim) scrim.addEventListener("click", closeD);
-    if(dclose) dclose.addEventListener("click", closeD);
-    document.addEventListener("keydown", function(e){ if(e.key==="Escape" && body.classList.contains("drawer-open")) closeD(); });
-    if(drawer) drawer.addEventListener("click", function(e){ if(e.target.closest("a")) closeD(); });
-
-    var db=$("details-btn"), dp=$("details");
-    if(db&&dp) db.addEventListener("click", function(){ var open=dp.classList.toggle("open"); db.setAttribute("aria-expanded", String(open)); db.firstChild.textContent = open?"Hide details ":"Show details "; });
-    function money(n){ if(n>=1e9) return "$"+(n/1e9).toFixed(2)+"B"; if(n>=1e6) return "$"+(n/1e6).toFixed(1)+"M"; if(n>=1e3) return "$"+(n/1e3).toFixed(0)+"K"; return "$"+n.toFixed(0); }
-    function gwei(g){ return (g>=0.1?g.toFixed(2):(g>=0.001?g.toFixed(3):Number(g.toPrecision(2)).toString()))+" gwei"; }
-    function grab(url,opt){ var c="AbortController" in window ? new AbortController():null, t=c?setTimeout(function(){c.abort();},7000):null; var o=opt||{}; if(c) o.signal=c.signal; return fetch(url,o).then(function(r){ if(!r.ok) throw 0; return r.json(); }).finally(function(){ if(t) clearTimeout(t); }); }
-    grab("https://coins.llama.fi/prices/current/coingecko:avalanche-2").then(function(j){ var c=j&&j.coins&&j.coins["coingecko:avalanche-2"], v=c&&Number(c.price); if(isFinite(v)&&v>0) $("sig0").textContent="$"+v.toLocaleString("en-US",{maximumFractionDigits:2}); }).catch(function(){});
-    grab("https://api.llama.fi/v2/historicalChainTvl/Avalanche").then(function(a){ if(!a||!a.length) return; var v=Number(a[a.length-1].tvl); if(isFinite(v)&&v>0) $("sig1").textContent=money(v); }).catch(function(){});
-    grab("https://api.avax.network/ext/bc/C/rpc",{ method:"POST", headers:{"Content-Type":"application/json"}, body:'{"jsonrpc":"2.0","id":1,"method":"eth_gasPrice","params":[]}' }).then(function(j){ var wei=j&&j.result?parseInt(j.result,16):NaN; if(isFinite(wei)&&wei>0) $("sig2").textContent=gwei(wei/1e9); }).catch(function(){});
-  })();
-  </script>
+</section>
+<footer class="ce96f67">
+  <div class="caa2b27 c9b0d54">
+    <span class="cd3a147">The guide</span>
+    <p class="ceb78a9">Last updated <span>Updated Oct 09, 2026</span></p>
+  </div>
+</footer>
+<script>
+(() => {
+  const toc = document.getElementById('toc-list');
+  const sections = Array.from(document.querySelectorAll('#guide-sections .c6ebb18'));
+  const fallback = toc.querySelector('[data-sections-link]');
+  const fragment = document.createDocumentFragment();
+  sections.forEach((section, index) => {
+    if (!section.id) {
+      const base = `guide-section-${index + 1}`;
+      let id = base;
+      let suffix = 1;
+      while (document.getElementById(id)) id = `${base}-${suffix++}`;
+      section.id = id;
+    }
+    const heading = section.querySelector('.cb12d35, h2, h3');
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.className = 'toc-link';
+    link.href = `#${encodeURIComponent(section.id)}`;
+    link.textContent = heading?.textContent.trim() || section.getAttribute('aria-label') || `Section ${index + 1}`;
+    item.append(link);
+    fragment.append(item);
+  });
+  if (sections.length) fallback.parentElement.replaceWith(fragment);
+  const entries = Array.from(toc.querySelectorAll('a[href^="#"]')).map(link => {
+    const target = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+    return { link, target };
+  }).filter(entry => entry.target);
+  if (!entries.length) return;
+  let activeLink;
+  let pending = false;
+  const activate = entry => {
+    if (!entry || entry.link === activeLink) return;
+    if (activeLink) activeLink.removeAttribute('aria-current');
+    entry.link.setAttribute('aria-current', 'location');
+    activeLink = entry.link;
+  };
+  const update = () => {
+    pending = false;
+    const boundary = Math.min(180, window.innerHeight * .25);
+    let active = entries[0];
+    for (const entry of entries) {
+      if (entry.target.getBoundingClientRect().top <= boundary) active = entry;
+    }
+    const root = document.scrollingElement || document.documentElement;
+    if (root.scrollHeight > window.innerHeight && Math.ceil(window.scrollY + window.innerHeight) >= root.scrollHeight - 2) {
+      active = entries[entries.length - 1];
+    }
+    activate(active);
+  };
+  const schedule = () => {
+    if (pending) return;
+    pending = true;
+    window.requestAnimationFrame(update);
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(schedule, {
+      rootMargin: '-12% 0px -60% 0px',
+      threshold: [0, .1, .5, 1]
+    });
+    entries.forEach(entry => observer.observe(entry.target));
+  }
+  toc.addEventListener('click', event => {
+    const link = event.target.closest('a');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const entry = entries.find(item => item.link === link);
+    if (!entry) return;
+    event.preventDefault();
+    const hadTabindex = entry.target.hasAttribute('tabindex');
+    if (!hadTabindex) {
+      entry.target.setAttribute('tabindex', '-1');
+      entry.target.addEventListener('blur', () => entry.target.removeAttribute('tabindex'), { once: true });
+    }
+    entry.target.focus({ preventScroll: true });
+    entry.target.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start'
+    });
+    if (window.location.hash !== link.hash) {
+      try { window.history.pushState(null, '', link.hash); } catch {}
+    }
+    activate(entry);
+  });
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule, { passive: true });
+  window.addEventListener('hashchange', schedule);
+  window.addEventListener('load', schedule, { once: true });
+  update();
+})();
+</script>
 </body>
 </html>
